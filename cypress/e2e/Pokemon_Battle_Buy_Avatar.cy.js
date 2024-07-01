@@ -4,7 +4,7 @@ describe('Покупка аватара', function () {                         
          cy.get('input[type="email"]').type('lapunov.s@yandex.ru');               // вводим логин
          cy.get('input[type="password"]').type('LS31415926');         // вводим пароль
          cy.get('button[type="submit"]').click();                        // нажимаем кнопку Подтвердить
-         cy.get('.header__btns > :nth-child(4)').click();                // нажимаем кнопку Магазин
+         cy.get('.header__btns > :nth-child(3)').click();                // нажимаем кнопку Магазин
          cy.get(':nth-child(4) > .shop__button').click();                // кликаем по кнопке Купить у первого доступного аватара
          cy.get('.credit').type('4620869113632996');                     // вводим номер карты
          cy.get('.k_input_ccv').type('125');                             // вводим CVV карты
